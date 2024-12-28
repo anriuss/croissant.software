@@ -2,11 +2,19 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Label } from "~/app/_components/ui/label";
-import { Switch } from "~/app/_components/ui/switch";
+import { useEffect, useState } from "react";
+import { Label } from "~/components/ui/label";
+import { Switch } from "~/components/ui/switch";
 
 export default function ThemeSwitcher() {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   const isLight = theme === "light";
 
