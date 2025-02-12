@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className="space-y-4">
         <h1 className="text-2xl font-bold text-primary">What do we do?</h1>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-          We launch our own products like Frag and Curespy. On top of that, we
+          We launch our own products like Frag, ClipMax and Curespy. On top of that, we
           offer development consultation services for startups and businesses.
         </p>
       </section>
@@ -46,6 +46,21 @@ export default function HomePage() {
               <CardContent className="text-muted-foreground">
                 An AI-based project that tracks clinical trials and updates the
                 patient.
+              </CardContent>
+            </Card>
+          </Link>
+
+          <Link
+            href="https://clipmax.sellsn.io"
+            className="transition-transform duration-500 hover:scale-105"
+          >
+            <Card className="h-full hover:border-primary">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">ClipMax</CardTitle>
+              </CardHeader>
+              <CardContent className="text-muted-foreground">
+                ClipMax is an innovative clipboard manager that helps you
+                quickly save and access your copied items.
               </CardContent>
             </Card>
           </Link>
