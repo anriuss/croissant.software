@@ -36,7 +36,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="https://cure-spy.vercel.app"
+            href="https://curespy.com"
             className="transition-transform duration-500 hover:scale-105"
           >
             <Card className="h-full hover:border-primary">
